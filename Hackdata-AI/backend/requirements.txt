@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pandas
+Faker
+pydantic
+python-dotenv
+sqlalchemy
+pytest
+httpx

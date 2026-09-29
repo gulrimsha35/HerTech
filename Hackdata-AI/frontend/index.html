@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackData AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>HackData AI</h1>
+        <p>AI-Powered Synthetic Data Generator</p>
+    </header>
+
+    <nav>
+        <button id="tabularTab">Tabular</button>
+        <button id="relationalTab">Relational</button>
+    </nav>
+
+    <main>
+
+        <section class="generator-box">
+
+            <h2>Generate Synthetic Data</h2>
+
+            <label>Describe the data you need:</label>
+
+            <textarea
+                id="prompt"
+                placeholder="Example: Generate 20 students with student ID, name, email and age."
+            ></textarea>
+
+            <button id="generateButton">
+                Generate Data
+            </button>
+
+        </section>
+
+        <section class="result-box">
+
+            <h2>Generated Data</h2>
+
+            <div id="result">
+                Your generated data will appear here.
+            </div>
+
+            <div id="downloadButtons" style="display: none; margin-top: 20px;">
+                <button id="downloadCsvButton">
+                    Download CSV
+                </button>
+
+                <button id="downloadJsonButton">
+                    Download JSON
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
